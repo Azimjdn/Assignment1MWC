@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BookingPage } from '../booking/booking';
 
 /**
  * Generated class for the GrabABoatPage page.
@@ -16,6 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class GrabABoatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  public gotoBooking(){
+    this.navCtrl.push(BookingPage);
   }
 
   ionViewDidLoad() {
