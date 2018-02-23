@@ -6,11 +6,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { MenuPage } from '../pages/menu/menu';
+import { GrabABoatPage } from '../pages/grab-a-boat/grab-a-boat';
+import { LoginPage } from '../pages/login/login';
+import { BookingPage } from '../pages/booking/booking';
+import { DriverPage } from '../pages/driver/driver';
+import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
+import { MapPage } from '../pages/map/map';
+import { SchedulePage } from '../pages/schedule/schedule';
+import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuPage,
+    GrabABoatPage,
+    BookingPage,
+    LoginPage,
+    DriverPage,
+    DriversLoginPage,
+    MapPage,
+    SchedulePage,
+    WeatherForecastPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +37,16 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuPage,
+    GrabABoatPage,
+    BookingPage,
+    LoginPage,
+    DriverPage,
+    DriversLoginPage,
+    MapPage,
+    SchedulePage,
+    WeatherForecastPage
   ],
   providers: [
     StatusBar,
