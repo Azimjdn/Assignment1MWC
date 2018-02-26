@@ -1,14 +1,20 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>QARIB</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The is the Qarib App
+  <h1>Welcome to Qarib App!</h1>
+  <img src="assets/imgs/boat.png" class="logo"/>
+  <p></p>
+  <div>Brunei's Speedboat Service</div>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button ion-button large block class="myButton" id="btn1" (click)="gotoDriversLogin()" class="marginTop">Driver</button>
   </p>
+  <p>
+    <button ion-button large block class="myButton" id="btn2" (click)="gotoMenu()" class="marginTop">Passenger</button>
+  </p>
+
 </ion-content>
