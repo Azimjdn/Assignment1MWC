@@ -1,3 +1,37 @@
 page-home {
+ background-color: $background-color;
+}
 
+h1 {
+    text-align: center;
+    font-size: 35px;
+    // margin-top: 150px;
+}
+
+.marginTop {
+    margin-top: 35px;
+}
+
+div {
+    text-align: center;
+    font-size: 15px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    size: 40px;
+}
+
+#btn1 {
+    background-color: rgb(106, 187, 231);
+}
+
+#btn2 {
+    background-color: rgb(106, 187, 231);
+}
+
+.myButton {
+    height: 70px;
 }
