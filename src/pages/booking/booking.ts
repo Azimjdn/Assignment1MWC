@@ -14,6 +14,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'booking.html',
 })
 export class BookingPage {
+  set: Date; // refer to [(ngModel)]="set" //
+  time: Date; // refer to [(ngModel)]="time" //
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
