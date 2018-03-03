@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the BookingPage page.
@@ -17,8 +17,19 @@ export class BookingPage {
   set: Date; // refer to [(ngModel)]="set" //
   time: Date; // refer to [(ngModel)]="time" //
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
+
+  doAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Submit',
+      subTitle: 'You will be notified soon!',
+      buttons: ['Ok']
+    });
+
+    alert.present();
+  }
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BookingPage');
