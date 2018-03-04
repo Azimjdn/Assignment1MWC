@@ -22,14 +22,10 @@ export class DriversLoginPage {
 
   constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  public gotoDrivers(){
-    this.navCtrl.push(DriverPage);
-  }
   
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DriversLoginPage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad DriversLoginPage');
+  // }
 
   async login(user: User) {
   try {
