@@ -15,6 +15,8 @@ import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast';
+import { AngularFireModule} from 'angularfire2';
+import { FIREBASE_CONFIG } from './app.firebase.config';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast'
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

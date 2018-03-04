@@ -1,3 +1,4 @@
+
 <!--
   Generated template for the DriversLoginPage page.
 
@@ -18,17 +19,19 @@
   <ion-list>
 
     <ion-item>
-      <ion-input type="text" placeholder="Username"></ion-input>
+      <ion-input type="text" [(ngModel)]="user.email" placeholder="Username"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input type="password" placeholder="Password"></ion-input>
+      <ion-input type="password" [(ngModel)]="user.password" placeholder="Password"></ion-input>
     </ion-item>
 
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" (click)="gotoDrivers()">Sign In</button>
+    <button ion-button color="primary" (click)="login()">Sign In</button>
+    <button ion-button color="light" (click)="register()">Register</button>
+    
     
   </div>
 </ion-content>

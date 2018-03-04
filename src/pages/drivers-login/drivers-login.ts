@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DriverPage } from '../driver/driver';
+import { User } from '../../Model/user';
 
 /**
  * Generated class for the DriversLoginPage page.
@@ -16,6 +17,8 @@ import { DriverPage } from '../driver/driver';
 })
 export class DriversLoginPage {
 
+  user = {} as User;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -25,6 +28,14 @@ export class DriversLoginPage {
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad DriversLoginPage');
+  }
+
+  login() {
+
+  }
+
+  register() {
+    this.navCtrl.push('RegisterPage');
   }
 
 }
