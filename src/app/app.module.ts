@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { AngularFireModule} from 'angularfire2';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,7 +16,8 @@ import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast';
-import { AngularFireModule} from 'angularfire2';
+import { RegisterPage } from '../pages/register/register';
+
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
@@ -28,6 +30,7 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
     BookingPage,
     DriverPage,
     DriversLoginPage,
+    RegisterPage,
     MapPage,
     SchedulePage,
     WeatherForecastPage
@@ -49,6 +52,7 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
     BookingPage,
     DriverPage,
     DriversLoginPage,
+    RegisterPage,
     MapPage,
     SchedulePage,
     WeatherForecastPage
