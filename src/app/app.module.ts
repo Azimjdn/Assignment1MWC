@@ -14,6 +14,7 @@ import { DriverPage } from '../pages/driver/driver';
 import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
+import { SignupPage } from '../Pages/signup/signup';
 import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast';
 
 @NgModule({
