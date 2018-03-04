@@ -14,6 +14,7 @@ import { DriverPage } from '../pages/driver/driver';
 import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
+import { SignupPage } from '../Pages/signup/signup';
 import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast';
 import { AngularFireModule} from 'angularfire2';
 import { FIREBASE_CONFIG } from './app.firebase.config';
@@ -30,6 +31,7 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     DriversLoginPage,
     MapPage,
     SchedulePage,
+    SignupPage,
     WeatherForecastPage
   ],
   imports: [
@@ -49,6 +51,7 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     DriversLoginPage,
     MapPage,
     SchedulePage,
+    SignupPage,
     WeatherForecastPage
   ],
   providers: [
