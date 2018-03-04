@@ -9,10 +9,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MenuPage } from '../pages/menu/menu';
 import { GrabABoatPage } from '../pages/grab-a-boat/grab-a-boat';
-<<<<<<< HEAD
-=======
-// import { LoginPage } from '../pages/login/login';
->>>>>>> a8db0b7f9c7bf9263c7c3b43680fc1199454c996
 import { BookingPage } from '../pages/booking/booking';
 import { DriverPage } from '../pages/driver/driver';
 import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
@@ -24,6 +20,8 @@ import { RegisterPage } from '../pages/register/register';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { AngularFireAuthModule} from 'angularfire2/auth';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
+import { RegisterPageModule } from '../pages/register/register.module';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +31,7 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
     BookingPage,
     DriverPage,
     DriversLoginPage,
-    RegisterPage,
+    // RegisterPage,
     MapPage,
     SchedulePage,
     WeatherForecastPage
@@ -43,7 +41,8 @@ import { AngularFireDatabaseModule} from 'angularfire2/database';
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    RegisterPageModule
 
   ],
   bootstrap: [IonicApp],
