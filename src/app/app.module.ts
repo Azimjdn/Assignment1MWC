@@ -29,6 +29,7 @@ import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast'
     DriversLoginPage,
     MapPage,
     SchedulePage,
+    SignupPage,
     WeatherForecastPage
   ],
   imports: [
@@ -47,6 +48,7 @@ import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast'
     DriversLoginPage,
     MapPage,
     SchedulePage,
+    SignupPage,
     WeatherForecastPage
   ],
   providers: [
