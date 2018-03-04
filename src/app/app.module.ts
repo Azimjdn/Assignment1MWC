@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MenuPage } from '../pages/menu/menu';
 import { GrabABoatPage } from '../pages/grab-a-boat/grab-a-boat';
-import { LoginPage } from '../pages/login/login';
+// import { LoginPage } from '../pages/login/login';
 import { BookingPage } from '../pages/booking/booking';
 import { DriverPage } from '../pages/driver/driver';
 import { DriversLoginPage } from '../pages/drivers-login/drivers-login';
@@ -18,6 +18,7 @@ import { WeatherForecastPage } from '../pages/weather-forecast/weather-forecast'
 import { AngularFireModule} from 'angularfire2';
 import { FIREBASE_CONFIG } from './app.firebase.config';
 import { AngularFireAuthModule} from 'angularfire2/auth';
+import { AngularFireDatabaseModule} from 'angularfire2/database';
 @NgModule({
   declarations: [
     MyApp,
@@ -25,7 +26,6 @@ import { AngularFireAuthModule} from 'angularfire2/auth';
     MenuPage,
     GrabABoatPage,
     BookingPage,
-    LoginPage,
     DriverPage,
     DriversLoginPage,
     MapPage,
@@ -36,7 +36,9 @@ import { AngularFireAuthModule} from 'angularfire2/auth';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    AngularFireModule
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -45,7 +47,6 @@ import { AngularFireAuthModule} from 'angularfire2/auth';
     MenuPage,
     GrabABoatPage,
     BookingPage,
-    LoginPage,
     DriverPage,
     DriversLoginPage,
     MapPage,
