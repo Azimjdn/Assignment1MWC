@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DriverPage } from '../driver/driver';
 import { User } from '../../Model/user';
+import {AngularFireAuth} from 'angularfire2/auth';
 
 /**
  * Generated class for the DriversLoginPage page.
@@ -19,7 +20,7 @@ export class DriversLoginPage {
 
   user = {} as User;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afAuth: AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   public gotoDrivers(){
@@ -30,12 +31,20 @@ export class DriversLoginPage {
     console.log('ionViewDidLoad DriversLoginPage');
   }
 
-  login() {
-
+  async login(user: User) {
+  try {
+    const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+    if (result) {
+      this.navCtrl.setRoot('DriverPage');
+    }
   }
+  catch(e){
+    console.error(e);
+  }
+}
 
   register() {
     this.navCtrl.push('RegisterPage');
   }
-
-}
+  
+  }
