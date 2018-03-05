@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DriverPage } from '../driver/driver';
-import { User } from '../../Model/user';
+// import { DriverPage } from '../driver/driver';
 import {AngularFireAuth} from 'angularfire2/auth';
+import { User } from '../../Model/user';
+
 
 /**
  * Generated class for the DriversLoginPage page.
@@ -27,7 +28,7 @@ export class DriversLoginPage {
   //   console.log('ionViewDidLoad DriversLoginPage');
   // }
 
-  async login(user: User) {
+ login(user: User) {
   try {
     const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
     if (result) {
