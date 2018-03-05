@@ -31,7 +31,7 @@ export class DriversLoginPage {
   try {
     const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
     if (result) {
-      this.navCtrl.setRoot('DriverPage');
+      this.navCtrl.push('DriverPage');
     }
   }
   catch(e){
