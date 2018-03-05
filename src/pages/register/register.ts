@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { User } from '../../Model/user';
 import {AngularFireAuth} from "angularfire2/auth";
-
 /**
  * Generated class for the RegisterPage page.
  *
